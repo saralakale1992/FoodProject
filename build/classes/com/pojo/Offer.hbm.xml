@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 Nov, 2018 11:28:57 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Offer" table="offer" catalog="onlinefoodservice">
+        <id name="oid" type="java.lang.Integer">
+            <column name="oid" />
+            <generator class="identity" />
+        </id>
+        <property name="oname" type="string">
+            <column name="oname" length="200" />
+        </property>
+        <property name="image" type="string">
+            <column name="image" length="200" />
+        </property>
+        <property name="fromdate" type="date">
+            <column name="fromdate" length="0" />
+        </property>
+        <property name="todate" type="date">
+            <column name="todate" length="0" />
+        </property>
+        <property name="oprice" type="string">
+            <column name="oprice" length="200" />
+        </property>
+        <property name="sprice" type="string">
+            <column name="sprice" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

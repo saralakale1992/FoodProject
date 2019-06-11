@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/onlinefoodservice</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<mapping resource="com/pojo/Addproduct.hbm.xml" />
+		<mapping resource="com/pojo/Addtocart.hbm.xml" />
+		<mapping resource="com/pojo/Admin.hbm.xml" />
+		<mapping resource="com/pojo/Booktable.hbm.xml" />
+		<mapping resource="com/pojo/Mainproduct.hbm.xml" />
+		<mapping resource="com/pojo/Registration.hbm.xml" />
+		<mapping resource="com/pojo/Specialmenu.hbm.xml" />
+		<mapping resource="com/pojo/Item.hbm.xml"/>
+		<mapping resource="com/pojo/Offer.hbm.xml"/>
+		<mapping resource="com/pojo/Addressdetails.hbm.xml"/>
+		<mapping resource="com/pojo/Orderstatus.hbm.xml"/>
+	</session-factory>
+</hibernate-configuration>

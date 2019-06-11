@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 Nov, 2018 11:28:57 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Addressdetails" table="addressdetails" catalog="onlinefoodservice">
+        <id name="adid" type="java.lang.Integer">
+            <column name="adid" />
+            <generator class="identity" />
+        </id>
+        <property name="fname" type="string">
+            <column name="fname" length="200" />
+        </property>
+        <property name="mobileno" type="string">
+            <column name="mobileno" length="200" />
+        </property>
+        <property name="pincode" type="string">
+            <column name="pincode" length="200" />
+        </property>
+        <property name="apartment" type="string">
+            <column name="apartment" length="200" />
+        </property>
+        <property name="area" type="string">
+            <column name="area" length="200" />
+        </property>
+        <property name="city" type="string">
+            <column name="city" length="200" />
+        </property>
+        <property name="state" type="string">
+            <column name="state" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 27 Nov, 2018 11:28:57 AM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.pojo.Orderstatus" table="orderstatus" catalog="onlinefoodservice">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="registration" class="com.pojo.Registration" fetch="select">
+            <column name="rid" />
+        </many-to-one>
+        <many-to-one name="item" class="com.pojo.Item" fetch="select">
+            <column name="iid" />
+        </many-to-one>
+        <property name="deliverydate" type="date">
+            <column name="deliverydate" length="0" />
+        </property>
+        <property name="total" type="string">
+            <column name="total" length="200" />
+        </property>
+        <property name="type" type="string">
+            <column name="type" length="200" />
+        </property>
+    </class>
+</hibernate-mapping>
